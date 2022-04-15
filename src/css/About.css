@@ -1,0 +1,130 @@
+.about {
+    display: flex;
+    height: 77vh;
+    margin-top: 6rem;
+  }
+  
+  /* left side styling */
+  .aboutLeft {
+    display: flex;
+    position: relative;
+    flex: 1;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .aboutName {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+
+  .aboutName > :nth-child(1) {
+    color: var(--black);
+    font-weight: bold;
+    font-size: 3rem;
+  }
+
+  .aboutName > :nth-child(2) {
+    color: var(--orange);
+    font-weight: bold;
+    font-size: 3rem;
+  }
+
+  .aboutName > :nth-child(3) {
+    font-weight: 100;
+    font-size: 14px;
+    color: var(--gray);
+    margin-top: 10px;
+  }
+
+  .aboutBtn {
+    width: 6rem;
+    height: 2rem;
+  }
+
+  .icons {
+    margin-top: 3rem;
+    display: flex;
+    gap: 0rem;
+  }
+
+  .icons > * {
+    transform: scale(0.5);
+  }
+
+  .icons > *:hover {
+    cursor: pointer;
+  }
+
+  /* right side styling */
+  .aboutRight {
+    flex: 1;
+    position: relative;
+  }
+
+  .aboutRight > * {
+    position: absolute;
+    z-index: 1;
+  }
+
+  .aboutRight > :nth-child(1) {
+    transform: scale(0.69);
+    left: -15%;
+    top: -9%;
+  }
+
+  .aboutRight > :nth-child(2) {
+    top: -4.6rem;
+    transform: scale(0.67);
+    left: -3rem;
+  }
+
+  .aboutRight > :nth-child(3) {
+    transform: scale(1.4);
+    left: 25%;
+  }
+
+  .aboutRight > :nth-child(4) {
+    transform: scale(0.62);
+    top: -19%;
+    left: -24%;
+    border-radius: 50%;
+    padding: 0;
+  }
+  
+  /* blur */
+  .blur {
+    position: absolute;
+    width: 22rem;
+    height: 14rem;
+    border-radius: 50%;
+    background: #edd0ff;
+    filter: blur(212px);
+    z-index: -9;
+    top: -18%;
+    left: 56%;
+    filter: blur(72px);
+  }
+  
+  @media screen and (max-width: 480px) {
+    .About {
+      flex-direction: column;
+      gap: 7rem;
+      height: 64rem;
+    }
+  
+    .aboutRight {
+      transform: scale(0.8);
+      left: -3rem;
+    }
+
+    .aboutRight .blur {
+      display: none;
+    }
+
+    .floating-div:nth-of-type(1){
+      /* display: none; */
+      top: -7rem !important;;
+    }
+  }
