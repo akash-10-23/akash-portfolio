@@ -33,8 +33,9 @@ const skills = {
       skills: [
         "⚡ Building responsive website front end using ReactJS",
         "⚡ Creating application backend in Node, Express",
-        "⚡ Maintaining database with MongoDB, MySQL",
+        "⚡ Maintaining database with MongoDB and MySQL",
         "⚡ Building REST APIs and testing them on Postman",
+        "⚡ Experience in hosting and managing websites on Heroku, Netlify and Firebase",
       ],
       softwareSkills: [
         {
@@ -57,20 +58,6 @@ const skills = {
           style: {
             backgroundColor: "#FFFFFF",
             color: "#F7DF1E",
-          },
-        },
-        {
-          skillName: "C",
-          fontAwesomeClassname: "simple-icons:c",
-          style: {
-            color: "#E94E32",
-          },
-        },
-        {
-          skillName: "C++",
-          fontAwesomeClassname: "simple-icons:cplusplus",
-          style: {
-            color: "#E94E32",
           },
         },
         {
@@ -117,15 +104,6 @@ const skills = {
             color: "#E94E32",
           },
         },
-      ],
-    },
-    {
-      title: "Cloud Infra-Architecture",
-      fileName: "CloudInfraImg",
-      skills: [
-        "⚡ Experience hosting and managing websites",
-      ],
-      softwareSkills: [
         {
           skillName: "Netlify",
           fontAwesomeClassname: "simple-icons:netlify",
@@ -147,15 +125,8 @@ const skills = {
             color: "#FFCA28",
           },
         },
-        {
-          skillName: "MongoDB",
-          fontAwesomeClassname: "simple-icons:mongodb",
-          style: {
-            color: "#47A248",
-          },
-        },
       ],
-    },
+    }
   ],
 };
 
@@ -426,7 +397,7 @@ const projectsHeader = {
 const contactPageData = {
   contactSection: {
     title: "Contact Me",
-    profile_image_path: "hrishi2.png",
+    profile_image_path: "infi.jpg",
     description:
       "You can contact me at the places mentioned below. I will try to get back to you as fast as I can. ",
   },

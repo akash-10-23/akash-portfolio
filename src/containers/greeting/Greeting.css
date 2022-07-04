@@ -15,12 +15,11 @@
 
 .greeting-main {
   display: flex;
-  /* text-align: center; */
 }
 
 .greeting-main > * {
   flex: 1;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .button-greeting-div {

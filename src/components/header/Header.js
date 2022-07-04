@@ -50,13 +50,13 @@ function Header(props) {
   const icon =
     props.theme.name === "dark" ? (
       <HiMoon
-        strokeWidth={1}
+        strokeWidth={1.2}
         size={20}
         color={props.theme.name === "light" ? "#F9D784" : "#A7A7A7"}
       />
     ) : (
       <CgSun
-        strokeWidth={1}
+        strokeWidth={1.2}
         size={20}
         color={props.theme.name === "light" ? "#F9D784" : "#A7A7A7"}
       />
@@ -97,7 +97,7 @@ function Header(props) {
                 activeStyle={{ fontWeight: "bold" }}
                 style={{ borderRadius: 5, color: theme.text }}
               >
-                Education and Certifications
+                Education
               </NavLink>
             </li>
             <li>
@@ -130,7 +130,7 @@ function Header(props) {
                 activeStyle={{ fontWeight: "bold" }}
                 style={{ borderRadius: 5, color: theme.text }}
               >
-                Contact and Resume
+                Contact 
               </NavLink>
             </li>
             <button {...styles} onClick={changeTheme}>
