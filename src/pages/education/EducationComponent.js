@@ -1,6 +1,4 @@
 import React from "react";
-import Header from "../../components/header/Header";
-import Footer from "../../components/footer/Footer";
 import Educations from "../../containers/education/Educations";
 import EducationImg from "./EducationImg";
 import "./EducationComponent.css";
@@ -9,8 +7,7 @@ import { Fade } from "react-reveal";
 function Education(props) {
   const theme = props.theme;
   return (
-    <div className="education-main">
-      <Header theme={props.theme} setTheme={props.setTheme} />
+    <div className="education-main" id="education">
       <div className="basic-education">
         <Fade bottom duration={2000} distance="40px">
           <div className="heading-div">
@@ -36,7 +33,6 @@ function Education(props) {
         </Fade>
         <Educations theme={props.theme} />
       </div>
-      <Footer theme={props.theme} />
     </div>
   );
 }

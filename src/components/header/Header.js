@@ -31,11 +31,11 @@ function Header(props) {
     },
   });
 
-  const link = settings.isSplash ? "/splash" : "home";
+  const link = settings.isSplash ? "/splash" : "/";
 
   const [currTheme, setCurrTheme] = useState(props.theme);
 
-  function changeTheme() {
+  const changeTheme = () => {
     if (currTheme === "light") {
       props.setTheme("dark");
       localStorage.setItem("theme", "dark");
@@ -79,59 +79,34 @@ function Header(props) {
           </label>
           <ul className="menu">
             <li>
-              <NavLink
-                className="homei"
-                to="/home"
-                tag={Link}
-                activeStyle={{ fontWeight: "bold" }}
-                style={{ borderRadius: 5, color: theme.text }}
-              >
+              <a className="homei" href="#home" style={{ borderRadius: 5, color: theme.text }}>
                 Home
-              </NavLink>
+              </a>
             </li>
             <li>
-              <NavLink
-                className="ec"
-                to="/education"
-                tag={Link}
-                activeStyle={{ fontWeight: "bold" }}
-                style={{ borderRadius: 5, color: theme.text }}
-              >
+              <a className="homei" href="#skills" style={{borderRadius: 5, color: theme.text}}>
+                Skills
+              </a>
+            </li>
+            <li>
+              <a className="ec" href="#education" style={{borderRadius: 5, color: theme.text}}>
                 Education
-              </NavLink>
+              </a>
             </li>
             <li>
-              <NavLink
-                className="xp"
-                to="/experience"
-                tag={Link}
-                activeStyle={{ fontWeight: "bold" }}
-                style={{ borderRadius: 5, color: theme.text }}
-              >
+              <a className="xp" href="#experience" style={{borderRadius: 5, color: theme.text}}>
                 Experience
-              </NavLink>
+              </a>
             </li>
             <li>
-              <NavLink
-                className="projects"
-                to="/projects"
-                tag={Link}
-                activeStyle={{ fontWeight: "bold" }}
-                style={{ borderRadius: 5, color: theme.text }}
-              >
+              <a className="projects" href="#projects" style={{borderRadius: 5, color: theme.text}}>
                 Projects
-              </NavLink>
+              </a>
             </li>
             <li>
-              <NavLink
-                className="cr"
-                to="/contact"
-                tag={Link}
-                activeStyle={{ fontWeight: "bold" }}
-                style={{ borderRadius: 5, color: theme.text }}
-              >
-                Contact 
-              </NavLink>
+              <a className="cr" href="#contact" style={{borderRadius: 5, color: theme.text}}>
+                Contact
+              </a>
             </li>
             <button {...styles} onClick={changeTheme}>
               {icon}
