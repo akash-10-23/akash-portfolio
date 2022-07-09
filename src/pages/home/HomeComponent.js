@@ -7,6 +7,7 @@ import Education from "../education/EducationComponent";
 import Experience from "../experience/Experience";
 import Projects from "../projects/Projects";
 import Contact from "../contact/ContactComponent";
+import Top from "../../containers/toTop/Top";
 
 function Home(props) {
   return (
@@ -19,6 +20,7 @@ function Home(props) {
       <Projects theme={props.theme} />
       <Contact theme={props.theme} />
       <Footer theme={props.theme} />
+      <Top />
     </div>
   );
 }

@@ -31,8 +31,6 @@ function Header(props) {
     },
   });
 
-  const link = settings.isSplash ? "/splash" : "/";
-
   const [currTheme, setCurrTheme] = useState(props.theme);
 
   const changeTheme = () => {
@@ -64,9 +62,9 @@ function Header(props) {
 
   return (
     <Fade top duration={1000} distance="20px">
-      <div>
+      <div className="navbar" style={{backgroundColor: theme.body}}>
         <header className="header">
-          <NavLink to={link} tag={Link} className="logo">
+          <NavLink to="/" tag={Link} className="logo">
             <span style={{ color: theme.text }}></span>
             <span className="logo-name" style={{ color: theme.text }}>
               {greeting.logo_name}
@@ -108,7 +106,7 @@ function Header(props) {
                 Contact
               </a>
             </li>
-            <button {...styles} onClick={changeTheme}>
+            <button aria-label="Mode" title="Mode" type="button" {...styles} onClick={changeTheme}>
               {icon}
             </button>
           </ul>

@@ -41,7 +41,11 @@ export default function Greeting(props) {
                   {...styles}
                   className="button"
                   onClick={() => {
-                    history.push("/contact");
+                    window.scroll({
+                      top: document.body.offsetHeight,
+                      left: 0, 
+                      behavior: 'smooth',
+                    });
                   }}
                 >
                   Contact Me
