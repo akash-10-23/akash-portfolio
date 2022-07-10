@@ -40,9 +40,10 @@ function Contact(props) {
                 className="contact-header-detail-text subTitle"
                 style={{ color: theme.secondaryText }}
               >
-                {ContactData["description"]}
+                {ContactData["description"]} <br />
+                {ContactData["subDescription"]}
               </p>
-              <SocialMedia />
+              <SocialMedia git={false} />
               <br />
               <br />
               <a {...styles} className="general-btn" href={greeting.resumeLink}>

@@ -18,15 +18,14 @@ function Education(props) {
               <h1 className="heading-text" style={{ color: theme.text }}>
                 Education
               </h1>
-              <h3 className="heading-sub-text" style={{ color: theme.text }}>
+              {/* <h3 className="heading-sub-text" style={{ color: theme.text }}>
                 Basic Qualification
-              </h3>
+              </h3> */}
               {/* <p
                 className="experience-header-detail-text subTitle"
                 style={{ color: theme.secondaryText }}
               >
-                I actively participate in hackathons and other tech-related
-                activities. Below are some of my major certifications.
+                So, 
               </p> */}
             </div>
           </div>

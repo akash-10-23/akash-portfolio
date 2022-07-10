@@ -3,13 +3,11 @@ import "./Greeting.css";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
 import { greeting } from "../../portfolio";
 import { Fade } from "react-reveal";
-import { useHistory } from "react-router-dom";
 import FeelingProud from "./FeelingProud";
 import { style } from "glamor";
 
 export default function Greeting(props) {
   const theme = props.theme;
-  const history = useHistory();
 
   const styles = style({
     backgroundColor: `${theme.accentBright}`,
@@ -33,9 +31,10 @@ export default function Greeting(props) {
                 <span style={{ color: theme.accentColor }}>
                   {greeting.full_name}.{" "}
                 </span>
-                {greeting.subTitle}
+                {greeting.subTitle} <br />
+                {greeting.aboutMe}
               </p>
-              <SocialMedia />
+              <SocialMedia git={true}/>
               <div className="portfolio-repo-btn-div">
                 <button
                   {...styles}
