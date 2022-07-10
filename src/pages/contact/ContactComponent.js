@@ -46,7 +46,7 @@ function Contact(props) {
               <SocialMedia git={false} />
               <br />
               <br />
-              <a {...styles} className="general-btn" href={greeting.resumeLink}>
+              <a  target="_blank" rel="noopener noreferrer" {...styles} className="general-btn" href={greeting.resumeLink}>
                 See my Resume
               </a>
             </div>
